@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:3.11
 
 RUN \
  echo "**** install build packages ****" && \
@@ -10,7 +10,9 @@ RUN \
 	python3 && \
  echo "**** install pip packages ****" && \
  pip3 install -U \
-	hiyapyco && \
+	hiyapyco \
+	jinja2 \ 
+	pyyaml && \
  echo "**** directories ****" && \
  mkdir -p \
 	/buildout && \
@@ -24,4 +26,4 @@ RUN \
 # add local files
 COPY /root /
 
-ENTRYPOINT [ "/merge.sh" ]
+ENTRYPOINT [ "/merge.py" ]

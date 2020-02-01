@@ -9,7 +9,7 @@ env:
   global:
     - DEBIAN_FRONTEND="noninteractive"
     - DOCKERHUB_LIVE="netbootxyz/yaml-merge"
-    - DOCKER_TAG="latest"
+    - DOCKER_TAG="external"
 
 jobs:
   include:
