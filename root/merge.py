@@ -28,7 +28,8 @@ for key, value in mod.items() :
 for key, value in mod[dict1].items() :
     dict2 = key
 # delete the specific keyname from the source yaml
-del main[dict1][dict2]
+if dict2 in main[dict1]:
+    del main[dict1][dict2]
 yaml1 = yaml.dump(main)
 
 # merge the yaml files
