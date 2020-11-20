@@ -1,4 +1,4 @@
-name: next-server
+name: yaml-merge
 on:
   push:
   schedule:
