@@ -10,7 +10,8 @@ RUN \
 	python3 && \
  echo "**** install pip packages ****" && \
  pip3 install -U \
-	hiyapyco && \
+	hiyapyco \
+	markupsafe==2.0.1 && \
  echo "**** directories ****" && \
  mkdir -p \
 	/buildout && \
