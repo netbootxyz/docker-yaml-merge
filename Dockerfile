@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine:3.24
 
 RUN \
  echo "**** install build packages ****" && \
